@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.lipsticktest.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_chooseTypeFragment"
+            app:destination="@id/chooseTypeFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTypeFragment"
+        android:name="com.example.lipsticktest.ChooseTypeFragment"
+        android:label="fragment_choose_type"
+        tools:layout="@layout/fragment_choose_type" >
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_chooseTopicFragment"
+            app:destination="@id/chooseTopicFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_randomTopicFirstFragment"
+            app:destination="@id/randomTopicFirstFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTopicFragment"
+        android:name="com.example.lipsticktest.ChooseTopicFragment"
+        android:label="fragment_choose_topic"
+        tools:layout="@layout/fragment_choose_topic" >
+        <action
+            android:id="@+id/action_chooseTopicFragment_to_topicDetailFragment"
+            app:destination="@id/topicDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomTopicFirstFragment"
+        android:name="com.example.lipsticktest.RandomTopicFirstFragment"
+        android:label="fragment_random_topic_first"
+        tools:layout="@layout/fragment_random_topic_first" >
+        <action
+            android:id="@+id/action_randomTopicFirstFragment_to_randomTopicDetailFragment"
+            app:destination="@id/randomTopicDetailFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/topicDetailFragment"
+        android:name="com.example.lipsticktest.TopicDetailFragment"
+        android:label="fragment_topic_detail"
+        tools:layout="@layout/fragment_topic_detail" >
+        <action
+            android:id="@+id/action_topicDetailFragment_to_submitFragment"
+            app:destination="@id/submitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomTopicDetailFragment"
+        android:name="com.example.lipsticktest.RandomTopicDetailFragment"
+        android:label="fragment_random_topic_detail"
+        tools:layout="@layout/fragment_random_topic_detail" >
+        <action
+            android:id="@+id/action_randomTopicDetailFragment_to_submitFragment"
+            app:destination="@id/submitFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitFragment"
+        android:name="com.example.lipsticktest.SubmitFragment"
+        android:label="fragment_submit"
+        tools:layout="@layout/fragment_submit" >
+        <action
+            android:id="@+id/action_submitFragment_to_checkFragment"
+            app:destination="@id/checkFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+        <action
+            android:id="@+id/action_submitFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/silde_to_left"
+            app:exitAnim="@anim/silde_from_right"
+            app:popEnterAnim="@anim/silde_to_right"
+            app:popExitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkFragment"
+        android:name="com.example.lipsticktest.CheckFragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" >
+        <action
+            android:id="@+id/action_checkFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_checkFragment_to_checkTopicDetailFragment"
+            app:destination="@id/checkTopicDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.lipsticktest.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/silde_to_right"
+            app:exitAnim="@anim/silde_from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkTopicDetailFragment"
+        android:name="com.example.lipsticktest.CheckTopicDetailFragment"
+        android:label="fragment_check_topic_detail"
+        tools:layout="@layout/fragment_check_topic_detail" >
+        <action
+            android:id="@+id/action_checkTopicDetailFragment_to_checkFragment"
+            app:destination="@id/checkFragment" />
+    </fragment>
+</navigation>

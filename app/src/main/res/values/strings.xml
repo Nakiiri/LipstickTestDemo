@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lipstick Test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="User_image">User_image</string>
+    <string name="Set">Set</string>
+    <string name="FirstTitle">口红测试</string>
+    <string name="Start_test">开始测试</string>
+    <string name="btn_choose">自选考题</string>
+    <string name="btn_random">随机考题</string>
+    <string name="random_title">已为您随机生成50道题</string>
+    <string name="submit_btn">提交</string>
+    <string name="alert_btn">提示</string>
+    <string name="tv_done">已做题目</string>
+    <string name="tv_nodone">未做题目</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_check">重新检查</string>
+    <string name="tv_grade">最终成绩</string>
+    <string name="tv_correct">正确题目</string>
+    <string name="tv_mistake">错误题目</string>
+    <string name="tv_mistakeRate">错误率</string>
+    <string name="btn_back">返回主页</string>
+    <string name="quit_title">确定退出？</string>
+    <string name="positive_message">确定</string>
+    <string name="negative_message">取消</string>
+</resources>
